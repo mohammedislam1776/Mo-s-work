@@ -1,1 +1,1 @@
-This is my repository for cool projects. 
+This is the repository for my portfolio and other cool projects. 
