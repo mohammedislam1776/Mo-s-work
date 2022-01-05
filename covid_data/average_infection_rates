@@ -1,0 +1,7 @@
+--Lists countries, their respective continents, and the infection percentages
+--This data is imported into Tableau and the infection percentages for each country is aggregated there to produce the average infection percentages for each continent
+
+
+select location, continent, date, total_cases, (total_cases/population)*100 as infection_percentage
+from commanding-port-315501.covid_data.covid
+where date = '2022-01-01'AND continent IS NOT NULL
