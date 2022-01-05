@@ -1,1 +1,8 @@
+--Lists the death percentages for each country
+--In Tableau, the location variable is assigned a geographic role (Country/Region) so that a map is created for each country
+--The colors would change so that lower percentages would be dark blue and higher percentages would be dark orange
 
+
+SELECT location, population, date, total_deaths, (total_deaths/total_cases)*100 as death_percentage
+from `commanding-port-315501.covid_data.covid`
+where date = '2022-01-01'
